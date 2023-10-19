@@ -16,7 +16,16 @@ public class Oops {
 		System.out.println(sqr.toString());
 		System.out.println(rect.toString());
 		System.out.println("hii");
-       
+		Student s1= new Student();
+		s1.name="ram";
+		s1.age=25;
+		s1.printInfo(s1.name);
+		s1.printInfo(s1.age);
+		s1.printInfo(s1.name,s1.age);
+		Person p1=new Person();
+		p1.setAge(30);
+		p1.setName("Rahul");
+		System.out.println(p1.getName()+" "+p1.getAge());
 	}
 
 }
@@ -100,4 +109,46 @@ class Rectangle extends Shape{
 	public String toString() {
 		return color+""+area();
 	}
+}
+
+
+//in java we have automatic garbage collector
+//Polymorphism: using same method differently
+//Method overloading creating same function but with different 
+//Method overloading
+//Method overloading is called runtime polymorphism.
+class Student{
+	String name;
+	int age;
+	
+	public void printInfo(String name) {
+		System.out.println(name);
+	}
+	public void printInfo(int age) {
+		System.out.print(age);
+	}
+	public void printInfo(String name, int age) {
+		System.out.println(name+""+age);
+	}
+}
+
+
+//Encapsulation
+
+class Person{
+	private String name;
+	private  int age;
+	
+	 public String getName() {
+		 return name;
+	 }
+	 public void setName(String name) {
+		 this.name=name;
+	 }
+	 public int getAge() {
+		 return age;
+	 }
+	 public void setAge(int age) {
+		 this.age=age;
+	 }
 }
