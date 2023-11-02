@@ -30,3 +30,23 @@ class GenericTest<k> {
 		return this.obj;
 	}
 }
+
+
+//boolean containsAll(collection<?>c)
+//boolean addAll(collection<?extends E>c)
+//boolean removeAll(collection<?>c)
+//boolean retainAll(collection<?>c)
+//void clear()
+
+//Lists
+//Lists are collections that maintain their elements in order and can contain duplicates
+//Elements are ordered
+//Each element are position based, starting from index 0
+
+
+//lists Methods
+//E get(int index)-
+//E set(int index, E element)-
+//void add(int index, E element)
+//boolean addAll(int index,collections<?extend f>c)
+//E remove(int index)
