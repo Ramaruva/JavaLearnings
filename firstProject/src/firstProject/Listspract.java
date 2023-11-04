@@ -1,7 +1,9 @@
 package firstProject;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Listspract {
 
@@ -33,6 +35,18 @@ public class Listspract {
         aliste3.add(12);
         System.out.println(alist);
         System.out.println(aliste3);
+        
+        
+        List<Integer> linkedlist = new LinkedList<>();
+        linkedlist.add(33);
+        linkedlist.add(233);
+        linkedlist.add(334);
+        ListIterator<Integer> iterator = linkedlist.listIterator();
+        System.out.println(iterator.next());
+        System.out.println(iterator.next());
+        System.out.println(iterator.previous());
+        System.out.println(iterator.nextIndex());
+        
 	}
   //lists has arraylist,linkedlist and vector
 }
