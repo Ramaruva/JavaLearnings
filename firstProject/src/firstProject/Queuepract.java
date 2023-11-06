@@ -42,7 +42,11 @@ public class Queuepract {
        System.out.println(dq);
        
        //
-       //PriorityQueue<Integer> prqor = new 
+       PriorityQueue<Integer> prqor = new PriorityQueue<Integer>();
+       prqor.offer(1);
+       prqor.offer(2);
+       prqor.offer(200);
+      
        
 	}
 	
