@@ -1,8 +1,10 @@
 package firstProject;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
@@ -46,8 +48,25 @@ public class Queuepract {
        prqor.offer(1);
        prqor.offer(2);
        prqor.offer(200);
-      
        
+       List<StudentMarks> stulist = new ArrayList<>();
+       stulist.add(new StudentMarks(100, 200));
+       stulist.add(new StudentMarks(130, 140));
+       stulist.add(new StudentMarks(140, 150));
+       stulist.add(new StudentMarks(30, 59));
+       stulist.add(new StudentMarks(140, 30));
+       
+       PriorityQueue<StudentMarks> pstulist = new PriorityQueue<StudentMarks>(stulist);
+       
+       List<StudentMarks>psli = new ArrayList<>();
+       int index = 0;
+       while(!pstulist.isEmpty()) {
+    	    if(index==3)
+    	    	break;
+    	    psli.add(pstulist.poll());
+    	    index++;
+       }
+       System.out.println(psli);
 	}
 	
 	//Deque
