@@ -44,10 +44,12 @@ public class Queuepract {
        System.out.println(dq);
        
        //
-       PriorityQueue<Integer> prqor = new PriorityQueue<Integer>();
+       PriorityQueue<Integer> prqor = new PriorityQueue<Integer>((a,b)->a-b);
        prqor.offer(1);
        prqor.offer(2);
        prqor.offer(200);
+       
+       System.out.println(prqor.poll());
        
        List<StudentMarks> stulist = new ArrayList<>();
        stulist.add(new StudentMarks(100, 200));
