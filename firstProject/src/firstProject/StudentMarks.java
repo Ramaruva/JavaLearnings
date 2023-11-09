@@ -1,5 +1,7 @@
 package firstProject;
 
+import java.util.Objects;
+
 /**
  * 
  */
@@ -31,6 +33,23 @@ public class StudentMarks implements Comparable<StudentMarks>{
 		// TODO Auto-generated method stub
 		return o.Maths-this.Maths;
 	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(Maths, science);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		StudentMarks other = (StudentMarks) obj;
+		return Maths == other.Maths && science == other.science;
+	}
+	
+	
 	
     
 }
