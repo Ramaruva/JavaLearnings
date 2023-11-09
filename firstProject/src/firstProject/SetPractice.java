@@ -26,6 +26,18 @@ public class SetPractice {
 		System.out.println(st);
 		for(int x:st)
 			System.out.println(x);
+		
+		Set<StudentMarks> stud = new HashSet<StudentMarks>();
+		
+		stud.add(new StudentMarks(100, 200));
+		stud.add(new StudentMarks(23, 345));
+		stud.add(new StudentMarks(234, 455));
+		stud.add(new StudentMarks(100, 200));
+		
+		for(StudentMarks x: stud)
+			System.out.println(x);
+		
+		System.out.println(stud.contains(new StudentMarks(100, 200)));
 
 	}
 
