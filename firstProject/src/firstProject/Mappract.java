@@ -1,5 +1,7 @@
 package firstProject;
-
+/*
+ * map pract
+ */
 public class Mappract {
 
 	public static void main(String[] args) {
