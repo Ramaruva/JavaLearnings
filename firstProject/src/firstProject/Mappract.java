@@ -1,5 +1,8 @@
 package firstProject;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /*
@@ -17,7 +20,19 @@ public class Mappract {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Map<K, V>
+		Map<String,Integer> map = new HashMap<>();
+		map.put("hr", 2);
+		map.put("ram", 4);
+		map.put("hello", 5);
+		System.out.println(map);
+		System.out.println(map.getOrDefault("pran",0));
+		
+		Map<Integer,List<Integer>> adj= new HashMap<>();
+		  adj.computeIfAbsent(1, f->new ArrayList<Integer>()).add(1);
+		  System.out.println(adj);
+		  
+		  
+		
 
 	}
 
