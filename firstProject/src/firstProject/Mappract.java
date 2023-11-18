@@ -30,6 +30,7 @@ public class Mappract {
 		Map<Integer,List<Integer>> adj= new HashMap<>();
 		  adj.computeIfAbsent(1, f->new ArrayList<Integer>()).add(1);
 		  System.out.println(adj);
+		  //commit
 		  
 		  
 		
