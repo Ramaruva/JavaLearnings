@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.NavigableMap;
+import java.util.TreeMap;
 
 /*
  * map practice 
@@ -32,9 +34,24 @@ public class Mappract {
 		  System.out.println(adj);
 		  //commit
 		  
-		  
+		   NavigableMap<Integer, String> tmap = new TreeMap<Integer, String>((a,b)->a-b);
+		   tmap.put(1, "pranita");
+		   tmap.put(2,"gowtham");
+		   tmap.put(3, "jaya");
+		   System.out.println(tmap);
 		
 
 	}
 
 }
+
+/*
+ *Tree Map:
+ *The TreeMap class implements the navigableMap interface, and thereby the sortedMap Interface
+ *By default, operations on sorted map rely on the natural ordering of the keys
+ *however, a total ordering can be specified by passing a customized comparator to constructor
+ *The treemap implementation uses balanced trees, which deliver excellent perfomance for all operations
+ *However, searching in a hashmap can be faster than in a treemap, as hashing algorithms 
+ *usually offer better perfomance than the search algo for balanced trees
+ *
+ */
