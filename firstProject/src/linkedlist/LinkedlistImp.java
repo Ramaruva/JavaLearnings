@@ -14,6 +14,15 @@ public class LinkedlistImp {
       		System.out.println(temp.data+"");
       		temp = temp.next;
       	}
+      	
+      	DoubleLinkedList dl = new DoubleLinkedList();
+      	dl.insertFirst(0);
+      	dl.insertFirst(2);
+      	dl.insertFirst(3);
+      	dl.insertFirst(4);
+      	dl.insertFirst(6);
+      	dl.insertLast(8);
+      	dl.Display();
      
 	}
 	
